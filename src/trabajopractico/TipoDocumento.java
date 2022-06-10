@@ -8,19 +8,15 @@ package trabajopractico;
  *
  * @author Leonel.Arguello
  */
-public class Persona {
+public class TipoDocumento {
     private String nombre;
-    private String apellido;
-    private TipoDocumento tipo;
+    private String Descripcion;
 
-    public TipoDocumento getTipo() {
-        return tipo;
+    public TipoDocumento(String nombre, String Descripcion) {
+        this.nombre = nombre;
+        this.Descripcion = Descripcion;
     }
 
-    public void setTipo(TipoDocumento tipo) {
-        this.tipo = tipo;
-    }
-    
     
 
     public String getNombre() {
@@ -31,21 +27,18 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getDescripcion() {
+        return Descripcion;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setDescripcion(String Descripcion) {
+        this.Descripcion = Descripcion;
     }
-
-   
 
     @Override
     public String toString() {
-        return "nombre y apellido del interesado/a: " + nombre + " "+ apellido + ", DNI:" + tipo ;
+        return nombre;
     }
     
+    
 }
-
-   
